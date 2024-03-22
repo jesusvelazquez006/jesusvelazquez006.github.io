@@ -1,0 +1,186 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> Ejemplo1 Mi primera pagina Web </Title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página con música</title>
+</head>
+<body>
+    <h1> música: Lost on you </h1>
+    
+    <!-- Aquí puedes cambiar la ruta de la música -->
+    <audio controls autoplay>
+        <source src="file:///C:/Users/Laboratorio/Downloads/LP%20-%20Lost%20On%20You%20(Official%20Music%20Video).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</body>
+</html>
+
+
+
+
+CHEADS
+
+<BODY>
+
+<CENTER> <H1> Etiquetas en lenguaje HTML-Diseñador Jesus Velazquez- </H1> </CENTER>
+<HR>
+<nav>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <style>
+        /* Estilos CSS para el menú */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+        .menu-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .menu-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .menu-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <div class="menu-content" id="myMenu">
+        <a href="file:///C:/Users/Laboratorio/Downloads/PAGINA%20WEB/inicio%20(2).html">Inicio</a>
+        <a href="file:///C:/Users/Laboratorio/Downloads/PAGINA%20WEB/ACERCA%20DE.HTML">Acerca de</a>
+        <a href="file:///C:/Users/Laboratorio/Downloads/PAGINA%20WEB/CONTACTO%20(1).html">Contacto</a>
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("myMenu");
+        menu.classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.menu-button')) {
+            var menus = document.getElementsByClassName("menu-content");
+            for (var i = 0; i < menus.length; i++) {
+                var openMenu = menus[i];
+                if (openMenu.classList.contains('show')) {
+                    openMenu.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<BR> <CENTER> <H1> ¿Qué es y para qué sirven? </H1> </CENTER> </BR>
+<HR>
+   
+<CENTER> <BR> <H1 STYLE="COLOR:BLUE;"> HTML </H1>  </BR> </CENTER>                        
+<BR> HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla. HTML dispone de etiquetas para imágenes, hipervínculos que nos permiten dirigirnos a otras páginas, saltos de línea, listas, tablas, etc.
+<HR>
+
+<CENTER> <BR> <H1  STYLE="COLOR:GREEN;"> BODY </H1> </BR> </CENTER>
+<BR> El uso principal del elemento body es para escribir el contenido visible en una página web. Esto incluye texto, imágenes, videos, enlaces, formularios y mucho más. Todo el contenido que se muestra en la ventana del navegador se define dentro de la etiqueta body.
+<HR>
+
+<CENTER> <BR> <H1  STYLE="COLOR:ORANGE;"> CENTER </H1> </BR> </CENTER>
+<BR> Esta etiqueta se usa para centrar el contenido que está dentro de ella horizontalmente en la página.
+<HR>
+
+<CENTER> <BR> <H1  STYLE="COLOR:YELLOW;"> H1 </H1> </BR> </CENTER>
+<BR> Esta etiqueta define un encabezado de nivel 1, que generalmente se muestra con un tamaño de fuente más grande que el texto normal y a menudo se utiliza para títulos principales.
+<HR>
+
+<CENTER> <BR> <H1  STYLE="COLOR:GREEN;"> HR </H1> </BR> </CENTER>
+<BR> Esta etiqueta se utiliza para insertar una línea horizontal en la página, que se puede utilizar para separar secciones de contenido.
+<HR>
+
+<CENTER> <BR> <H1  STYLE="COLOR:BLUE;"> BR </H1> </BR> </CENTER>
+<BR> Esta etiqueta se utiliza para insertar un salto de línea, lo que significa que el texto que sigue aparecerá en una nueva línea.
+<HR>
+
+<CENTER> <BR> <H1  STYLE="COLOR:RED;"> P </H1> </BR> </CENTER>
+<BR> Esta etiqueta define un párrafo de texto.
+<HR>
+
+<CENTER> <BR> <H1  STYLE="COLOR:ORANGE;"> HEAD </H1> </BR> </CENTER>
+<BR> La HEAD es la primera de las dos partes en que se estructura un documento HTML. En la HEAD reside información acerca del documento, y generalmente no se ve cuando se navega por él.
+<HR>
+
+<CENTER> <BR> <H1  STYLE="COLOR:BLUE;"> TITLE </H1> </BR> </CENTER>
+<BR> HTML define el título del documento que se muestra en un browser la barra de título o la pestaña de una página. Solo contiene texto; las etiquetas dentro del elemento se ignoran. Contenido de metadatos. Texto que no es un espacio en blanco entre elementos.
+<HR>
+
+<P> GRACIAS POR VER :) </P>
+
+<HEAD>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=,initial-scale=1.0">
+   <style>
+      body {
+                 margin:0;
+                  padding:0;
+                  background:url("https://cdn.ipadizate.com/2019/10/Day.jpg")no-repeat center center fixed; background-size:cover;)
+              }
+
+
+</style>
+</head>
+
+</body>
+
+
+<html>
+</html>
+
+</HTML>
